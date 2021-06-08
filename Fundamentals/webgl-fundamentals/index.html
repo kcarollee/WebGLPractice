@@ -1,0 +1,15 @@
+<canvas id="c"></canvas>
+<script src="main.js"></script>
+<script id="vertex-shader-2d" type="notjs">
+	attribute vec4 a_position;
+	void main(){
+		gl_Position = a_position;
+	}
+</script>
+<script id="fragment-shader-2d" type="notjs">
+	precision mediump float;
+
+	void main(){
+		gl_FragColor = vec4(1, 0, 0.5, 1);
+	}
+</script>
